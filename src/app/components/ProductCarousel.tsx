@@ -1,11 +1,12 @@
 "use client";
 
+import Image, { StaticImageData } from "next/image";
 import { useRef } from "react";
 
 type ProductCarouselProps = {
   productKey: string;
   title: string;
-  gallery: string[];
+  gallery: StaticImageData[];
 };
 
 export default function ProductCarousel({
@@ -33,14 +34,26 @@ export default function ProductCarousel({
         role="group"
         aria-label={`Carrusel de imagenes de ${title}`}
       >
-        {gallery.map((item, index) => (
-          <div
-            key={`${productKey}-img-${index}`}
-            className="placeholder-box flex min-h-[140px] min-w-full snap-center items-center justify-center rounded-lg"
-          >
-            <span className="placeholder-label">{item}</span>
+        {gallery.length === 0 ? (
+          <div className="placeholder-box flex h-[240px] min-w-full snap-center items-center justify-center rounded-lg">
+            <span className="placeholder-label">Imágenes próximamente</span>
           </div>
-        ))}
+        ) : (
+          gallery.map((img, index) => (
+            <div
+              key={`${productKey}-img-${index}`}
+              className="relative h-[240px] min-w-full snap-center overflow-hidden rounded-lg"
+            >
+              <Image
+                src={img}
+                alt={`${title} - imagen ${index + 1}`}
+                fill
+                className="object-contain"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              />
+            </div>
+          ))
+        )}
       </div>
       <button
         type="button"

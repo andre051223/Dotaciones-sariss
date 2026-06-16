@@ -6,6 +6,23 @@ import logoSariss from "./LogoSariss.png";
 import imagenHero from "./Imagen3.png";
 import imagenInstitucional from "./Imagen4.png";
 import ProductCarousel from "./components/ProductCarousel";
+import hoodie1 from "./hoodies/hoodie-1.png";
+import hoodie2 from "./hoodies/hoodie-2.png";
+import chaleco1 from "./chalecos/chaleco-1.png";
+import chaleco2 from "./chalecos/chaleco-2.png";
+import chaleco3 from "./chalecos/chaleco-3.png";
+import chaleco4 from "./chalecos/chaleco-4.png";
+import chaqueta1 from "./chaquetas/chaqueta-1.png";
+import chaqueta2 from "./chaquetas/chaqueta-2.png";
+import chaqueta3 from "./chaquetas/chaqueta-3.png";
+import chaqueta4 from "./chaquetas/chaqueta-4.png";
+import cobija1 from "./cobijas/cobija-1.png";
+import vestido1 from "./vestidos/vestido-1.png";
+import vestido2 from "./vestidos/vestido-2.png";
+import vestido3 from "./vestidos/vestido-3.png";
+import vestido4 from "./vestidos/vestido-4.png";
+import vestido5 from "./vestidos/vestido-5.png";
+import vestido6 from "./vestidos/vestido-6.png";
 
 export default function Home() {
   const products = [
@@ -14,42 +31,42 @@ export default function Home() {
       title: "Hoodies",
       description:
         "Hoodies personalizables para dotacion empresarial, con opciones de bordado o estampado y telas termicas que combinan comodidad y durabilidad.",
-      gallery: ["Imagen 1", "Imagen 2", "Imagen 3"],
+      gallery: [hoodie1, hoodie2],
     },
     {
       key: "chalecos",
       title: "Chalecos",
       description:
         "Chalecos livianos o acolchados para trabajo en campo, con materiales resistentes y opciones reflectivas para mayor seguridad.",
-      gallery: ["Imagen 1", "Imagen 2", "Imagen 3"],
+      gallery: [chaleco1, chaleco2, chaleco3, chaleco4],
     },
     {
       key: "chaquetas",
       title: "Chaquetas",
       description:
         "Chaquetas corporativas con proteccion al clima, forros confortables y acabados que proyectan una imagen profesional.",
-      gallery: ["Imagen 1", "Imagen 2", "Imagen 3"],
+      gallery: [chaqueta1, chaqueta2, chaqueta3, chaqueta4],
     },
     {
       key: "blusas",
       title: "Blusas",
       description:
         "Blusas empresariales con cortes modernos y textiles frescos, pensadas para jornadas largas y una presencia impecable.",
-      gallery: ["Imagen 1", "Imagen 2", "Imagen 3"],
+      gallery: [],
     },
     {
-      key: "leggins",
-      title: "Leggins",
+      key: "vestidos",
+      title: "Vestidos",
       description:
-        "Leggins funcionales para labores operativas o activaciones de marca, con elasticidad y confort durante todo el dia.",
-      gallery: ["Imagen 1", "Imagen 2", "Imagen 3"],
+        "Vestidos empresariales con diseños elegantes y telas de alta calidad, ideales para uniformes formales y presentaciones corporativas.",
+      gallery: [vestido1, vestido2, vestido3, vestido4, vestido5, vestido6],
     },
     {
       key: "cobijas",
       title: "Cobijas",
       description:
         "Cobijas institucionales para kits corporativos o dotaciones especiales, suaves al tacto y faciles de personalizar.",
-      gallery: ["Imagen 1", "Imagen 2", "Imagen 3"],
+      gallery: [cobija1],
     },
   ];
 
