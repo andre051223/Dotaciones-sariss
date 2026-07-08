@@ -109,7 +109,7 @@ export default function Home() {
   return (
     <div className="relative flex min-h-full flex-1 flex-col">
 
-      <header className="relative z-10 border-b border-[var(--line)] bg-[rgba(247,246,242,0.9)] backdrop-blur">
+      <header className="relative z-10 border-b border-[var(--line)] bg-[rgba(255,255,255,0.9)] backdrop-blur">
         <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-5">
           <div className="flex items-center">
             <Image
